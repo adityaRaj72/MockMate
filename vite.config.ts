@@ -5,7 +5,8 @@ import path from "path";
 // https://vitejs.dev/config/
 export default defineConfig(() => ({
   server: {
-    host: "mockmate-iy6p.onrender.com",
+    host: "::",
+    allowedHosts: ["mockmate-iy6p.onrender.com"],
     port: 8080,
     hmr: {
       overlay: false,
